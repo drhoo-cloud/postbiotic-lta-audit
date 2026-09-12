@@ -87,7 +87,10 @@ The release that accompanies the submitted manuscript is archived on Zenodo.
 Cite the DOI rather than this URL, so that the version you used is the version
 a reader gets.
 
-    [Zenodo DOI — issued on release]
+    https://doi.org/10.5281/zenodo.22719721
+
+That DOI resolves to the most recent version. The v1.0.0 release that
+accompanies the submitted manuscript is 10.5281/zenodo.22719722.
 
 `CITATION.cff` above carries the same information in machine-readable form;
 GitHub renders it under "Cite this repository".

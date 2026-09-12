@@ -28,6 +28,7 @@ authors:
     orcid: "https://orcid.org/0000-0001-9369-6542"
     affiliation: "Graduate School of Biotechnology, Kyung Hee University"
 license: MIT
+doi: "10.5281/zenodo.22719721"
 repository-code: "https://github.com/drhoo-cloud/postbiotic-lta-audit"
 keywords:
   - postbiotic
