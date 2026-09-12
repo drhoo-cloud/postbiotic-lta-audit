@@ -1,0 +1,49 @@
+# Target taxa for the screen, one per line. Blank lines and # comments ignored.
+# Controls are listed in config/thresholds.yaml (sampling.controls) and are
+# reported separately from the lactic acid bacterial totals.
+
+# ── Lactobacillus (acidophilus group)
+Lactobacillus acidophilus
+Lactobacillus crispatus
+Lactobacillus gasseri
+Lactobacillus helveticus
+Lactobacillus jensenii
+Lactobacillus johnsonii
+Lactobacillus delbrueckii
+Lactobacillus paragasseri
+Lactobacillus amylovorus
+Lactobacillus kefiranofaciens
+
+# ── other lactic acid bacterial genera
+Lactiplantibacillus plantarum
+Lactiplantibacillus pentosus
+Lactiplantibacillus paraplantarum
+Lacticaseibacillus rhamnosus
+Lacticaseibacillus casei
+Lacticaseibacillus paracasei
+Lacticaseibacillus zeae
+Limosilactobacillus reuteri
+Limosilactobacillus fermentum
+Limosilactobacillus mucosae
+Limosilactobacillus antri
+Latilactobacillus sakei
+Latilactobacillus curvatus
+Levilactobacillus brevis
+Ligilactobacillus salivarius
+Ligilactobacillus animalis
+Companilactobacillus
+Apilactobacillus kunkeei
+Apilactobacillus apinorum
+Apilactobacillus kosoi
+Lactococcus lactis
+Lactococcus garvieae
+Leuconostoc mesenteroides
+Leuconostoc citreum
+Pediococcus pentosaceus
+Pediococcus acidilactici
+
+# ── controls
+Enterococcus faecalis
+Enterococcus faecium
+Bifidobacterium longum
+Bifidobacterium animalis

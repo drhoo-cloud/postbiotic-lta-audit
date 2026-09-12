@@ -1,0 +1,11 @@
+data/*.jsonl
+data/*.cif
+data/reference_proteins.json
+data/figdata.json
+data/tables/TableS11d.csv
+figures/Figure*.png
+figures/Figure*.tif
+figures/GA.png
+figures/GA.tif
+__pycache__/
+*.pyc

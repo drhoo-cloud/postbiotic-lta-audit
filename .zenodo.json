@@ -1,0 +1,41 @@
+{
+  "title": "postbiotic-lta-audit: what the sequence record can and cannot say about lipoteichoic acid D-alanylation",
+  "upload_type": "software",
+  "description": "Code, calling criteria and data for the manuscript 'Standardizing postbiotics: a genome cannot supply the value, and lipoteichoic acid shows what to state instead'. Screens 9,143 deposited RefSeq assemblies for the capacity to remove D-alanine from lipoteichoic acid, resolving gene presence, predicted localization and substrate-contact conservation; audits the public annotation of that enzyme; and tests measured substitution values against the resulting classification. No new sequence and no new laboratory measurement were generated. Calling criteria are held outside the code and the pre-registration record states when each was fixed.",
+  "license": "MIT",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Nguyen, Trang Thi Minh",
+      "affiliation": "Graduate School of Biotechnology, Kyung Hee University",
+      "orcid": "0000-0001-5288-8994"
+    },
+    {
+      "name": "Kim, Hyun",
+      "affiliation": "Department of Genetics and Biotechnology, College of Life Sciences, Kyung Hee University"
+    },
+    {
+      "name": "Kim, Hangeun",
+      "affiliation": "Department of Genetics and Biotechnology, College of Life Sciences, Kyung Hee University"
+    },
+    {
+      "name": "Chung, Dae Kyun",
+      "affiliation": "Graduate School of Biotechnology, Kyung Hee University"
+    },
+    {
+      "name": "Yi, Tae-Hoo",
+      "affiliation": "Graduate School of Biotechnology, Kyung Hee University",
+      "orcid": "0000-0001-9369-6542"
+    }
+  ],
+  "keywords": [
+    "postbiotic",
+    "lipoteichoic acid",
+    "D-alanylation",
+    "DltE",
+    "comparative genomics",
+    "quality specification",
+    "food science"
+  ],
+  "version": "1.0.0"
+}

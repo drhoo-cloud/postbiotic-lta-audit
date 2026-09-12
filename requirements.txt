@@ -1,0 +1,9 @@
+# Core analysis
+pyhmmer>=0.10          # hmmsearch, hmmalign (HMMER3 bindings)
+gemmi>=0.6             # PDB/mmCIF parsing for ligand contact residues
+PyYAML>=6.0            # configuration
+matplotlib>=3.8        # figures
+numpy>=1.26
+
+# Phobius, NCBI Datasets and E-utilities are reached over HTTP via curl,
+# which is assumed to be on PATH. No API key is required.

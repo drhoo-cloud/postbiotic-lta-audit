@@ -1,0 +1,82 @@
+# ══════════════════════════════════════════════════════════════════════
+#  Screening criteria — LTA D-alanylation capacity in lactic acid bacteria
+#
+#  ★ These values were fixed BEFORE the expanded scan was executed and were
+#    not changed afterwards. They are kept outside the code so that any
+#    modification is visible in the commit history.
+#
+#  ★ Honesty statement: the criteria were derived from a 110-genome pilot,
+#    so they were NOT fixed before any genome was retrieved. The accurate
+#    claim is "fixed before the expanded scan and not changed since".
+#    The pre-registration record is Methods S2 of the manuscript supplement.
+# ══════════════════════════════════════════════════════════════════════
+version: "6.0"
+fixed_on: "2026-09-01"
+
+reference:
+  # L. plantarum WCFS1 DltE — the only DltE with a solved crystal structure
+  dltE:       {accession: WP_046039513.1, length: 397}
+  dltA:       {accession: WP_003640707.1}
+  mprF_long:  {accession: WP_011101138.1, note: "flippase + synthetase domains"}
+  mprF_short: {accession: WP_003643294.1, note: "flippase domain only"}
+  structure:
+    pdb: 8AKH
+    ligand: G3P              # sn-glycerol-3-phosphate, the LTA backbone unit
+    observed_range: [75, 395]
+
+layer1_presence:
+  search: hmmsearch
+  evalue: 1.0e-10
+  ortholog_call:
+    min_bitscore: 110
+    length_range: [250, 460]
+    require_dltA: true       # genomes lacking dlt form a separate class
+  sensitivity_bitscores: [90, 110, 130]
+  multiple_hits: best_bitscore
+  negative_control:
+    product_regex: "D-alanyl-D-alanine carboxypeptidase"
+    length_range: [300, 520]
+  positive_control: WP_046039513.1    # self-hit; abort if it fails
+
+layer2_localization:
+  tool: phobius
+  endpoint: https://www.ebi.ac.uk/Tools/services/rest/phobius
+  format: short
+  parameters: default
+  classes:
+    A_TM:   {rule: "TM >= 1",           label: membrane-anchored}
+    B_SP:   {rule: "TM == 0 and SP",    label: secreted}
+    C_CYTO: {rule: "TM == 0 and not SP", label: cytoplasmic}
+  note: >
+    This layer is a PREDICTION, not a determination. Cytoplasmic calls must
+    be confirmed by cell fractionation before being treated as established.
+
+layer3_contacts:
+  method: hmmalign_to_single_sequence_hmm
+  contact_cutoff_angstrom: 4.2
+  # Grouping follows Nikolopoulos et al. 2023 and was NOT re-assigned post hoc.
+  catalytic_scaffold: [Ser128, Tyr213, Tyr338, Gly348]
+  substrate_contact:  [Leu127, Arg345, His347, Leu349]
+
+sampling:
+  source: refseq
+  cap_per_species: 500
+  order: api_default          # no random re-sampling on cap overflow
+  controls:
+    - Enterococcus faecalis
+    - Enterococcus faecium
+    - Bifidobacterium longum
+    - Bifidobacterium animalis
+
+statistics:
+  interval: wilson_score
+  confidence: 0.95
+  zero_detection: upper_bound_only
+  pass_threshold: null        # ★ by design — the distribution is the output
+
+runtime:
+  download_threads: 4         # keep modest; NCBI throttles higher concurrency
+  phobius_threads: 5          # EBI is a shared public service
+  hmmer_cpus: 1
+  # ★ Set your own address. EBI requires a real contact for job submission.
+  contact_email: null
