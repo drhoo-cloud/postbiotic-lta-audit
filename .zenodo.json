@@ -1,7 +1,7 @@
 {
   "title": "postbiotic-lta-audit: what the sequence record can and cannot say about lipoteichoic acid D-alanylation",
   "upload_type": "software",
-  "description": "Code, calling criteria and data for the manuscript 'Standardizing postbiotics: a genome cannot supply the value, and lipoteichoic acid shows what to state instead'. Screens 9,143 deposited RefSeq assemblies for the capacity to remove D-alanine from lipoteichoic acid, resolving gene presence, predicted localization and substrate-contact conservation; audits the public annotation of that enzyme; and tests measured substitution values against the resulting classification. No new sequence and no new laboratory measurement were generated. Calling criteria are held outside the code and the pre-registration record states when each was fixed.",
+  "description": "Code, calling criteria and data for the manuscript 'Lipoteichoic acid as a test case for what the genome cannot specify in postbiotics'. Screens 9,143 deposited RefSeq assemblies for the capacity to remove D-alanine from lipoteichoic acid, resolving gene presence, predicted localization and substrate-contact conservation; audits the public annotation of that enzyme; and tests measured substitution values against the resulting classification. No new sequence and no new laboratory measurement were generated. Calling criteria are held outside the code and the pre-registration record states when each was fixed. Version 1.2.0 is a complete re-run of the pipeline on 2026-09-23: every call reproduced, supplementary tables renumbered consecutively, and the threshold-sensitivity figures corrected to 27.1% and 48.7%.",
   "license": "MIT",
   "access_right": "open",
   "creators": [
@@ -15,7 +15,7 @@
       "affiliation": "Department of Genetics and Biotechnology, College of Life Sciences, Kyung Hee University"
     },
     {
-      "name": "Kim, Hangeun",
+      "name": "Kim, Han-geun",
       "affiliation": "Department of Genetics and Biotechnology, College of Life Sciences, Kyung Hee University"
     },
     {
@@ -37,5 +37,5 @@
     "quality specification",
     "food science"
   ],
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
