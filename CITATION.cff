@@ -2,8 +2,8 @@ cff-version: 1.2.0
 title: "postbiotic-lta-audit: what the sequence record can and cannot say about lipoteichoic acid D-alanylation"
 message: "If you use this software or data, please cite the manuscript below."
 type: software
-version: 1.1.0
-date-released: 2026-09-12
+version: 1.2.0
+date-released: 2026-09-23
 authors:
   - family-names: Nguyen
     given-names: Trang Thi Minh
@@ -15,7 +15,7 @@ authors:
     email: hyunkim213@khu.ac.kr
     affiliation: "Department of Genetics and Biotechnology, College of Life Sciences, Kyung Hee University"
   - family-names: Kim
-    given-names: Hangeun
+    given-names: Han-geun
     email: hkim93@khu.ac.kr
     affiliation: "Department of Genetics and Biotechnology, College of Life Sciences, Kyung Hee University"
   - family-names: Chung
@@ -38,8 +38,8 @@ keywords:
   - quality specification
 preferred-citation:
   type: article
-  title: "Standardizing postbiotics: a genome cannot supply the value, and lipoteichoic acid shows what to state instead"
-  journal: "Trends in Food Science & Technology"
+  title: "Lipoteichoic acid as a test case for what the genome cannot specify in postbiotics"
+  journal: "npj Science of Food"
   year: 2026
   status: submitted
   authors:
@@ -48,7 +48,7 @@ preferred-citation:
     - family-names: Kim
       given-names: Hyun
     - family-names: Kim
-      given-names: Hangeun
+      given-names: Han-geun
     - family-names: Chung
       given-names: Dae Kyun
     - family-names: Yi
