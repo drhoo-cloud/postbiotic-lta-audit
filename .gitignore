@@ -2,7 +2,7 @@ data/*.jsonl
 data/*.cif
 data/reference_proteins.json
 data/figdata.json
-data/tables/TableS11d.csv
+data/tables/TableS4d.csv
 figures/Figure*.png
 figures/Figure*.tif
 figures/GA.png
